@@ -26,7 +26,7 @@ jobs:
       - name: Setup .NET Core SDK
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: 5
+          dotnet-version: '5.0'
           
       - name: Publish .NET Core Project
         run: dotnet publish Blazor.Heroku.csproj -c Release -o release
